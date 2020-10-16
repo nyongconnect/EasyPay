@@ -22,7 +22,7 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome !"</string>
     <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_password">Password must be > 5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="login_activity_logo_img">EasyPay Logo on Login Activity</string>
     <string name="register_label_txt">REGISTER</string>
@@ -33,4 +33,24 @@
     <string name="emailfield_helper_txt">Email</string>
     <string name="numberfield_helper_txt">Number</string>
     <string name="confirm_password_helper_txt">Confirm Password</string>
+    <string name="fund_wallet">Fund Wallet</string>
+    <string name="dummy_amount">5000</string>
+
+
+<!--    firebase user node element-->
+    <string name="user_node">user</string>
+    <string name="user_id">user_id</string>
+    <string name="user_phone_number">phone_number</string>
+    <string name="user_email">email</string>
+    <string name="user_full_name">fullname</string>
+    <string name="user_reg_date">reg_date</string>
+
+<!--    user account balance -->
+    <string name="account_balance">wallet_balance</string>
+    <string name="balance">Wallet Balance</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="description">Description</string>
+
+
+    <!--    transaction details -->
 </resources>

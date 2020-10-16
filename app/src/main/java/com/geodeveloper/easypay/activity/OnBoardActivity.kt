@@ -1,6 +1,5 @@
 package com.geodeveloper.easypay.activity
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,7 +12,7 @@ class OnBoardActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_on_board)
-        isUserRegisteered()
+        isUserRegistered()
         btnRegister.setOnClickListener {
             startActivity(Intent(this,RegistrationActivity::class.java))
         }
@@ -22,7 +21,7 @@ class OnBoardActivity : AppCompatActivity() {
         }
     }
 
-    private fun isUserRegisteered() {
+    private fun isUserRegistered() {
         if(FirebaseAuth.getInstance().currentUser != null){
             val intent = Intent(this, MainActivity::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)

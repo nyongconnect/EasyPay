@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.geodeveloper.easypay.R
 
@@ -21,7 +22,7 @@ class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-        mDelayHandler = Handler()
+        mDelayHandler = Handler(Looper.getMainLooper())
         mDelayHandler!!.postDelayed(mRunnable, SPLASH_DELAY)
     }
 }
