@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             FirebaseAuth.getInstance().signOut()
             val intent = Intent(this, OnBoardActivity::class.java)
             startActivity(intent)
+
         } else {
             val userListener = object : ValueEventListener {
                 override fun onCancelled(p0: DatabaseError) {
